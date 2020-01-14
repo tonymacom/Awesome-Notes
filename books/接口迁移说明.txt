@@ -1,0 +1,25 @@
+
+webservice-front-end                                          迁移后接口                                          
+                                                    
+utilities/UPSTrackingService                                   ec-so/orders/shipping/{order_id}   GET   https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199622674
+utilities/USPSTrackingService
+utilities/ThirdPartTrackingService
+
+
+users/newAddress                                               ec-customer/address   POST            https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/172982372/ec-customer
+users/editAddress                                              ec-customer/address/update  put       https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/172982372/ec-customer
+
+
+security/checkVersion                                          ec-common/security/checkVersion  GET   https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199720963/ec-common
+security/getSysConfig                                          ec-common/security/getSysConfig   get  https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199720963/ec-common
+
+/cartV4/getOrderInfo										   /orders/{order_id}				https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199458832
+/cartV4/getErrorItemsOfCart	(购物车直接返回)								   
+/users/chooseAddress(无效)
+/users/addOrderRefferer											/orders/referer					https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199360573
+/users/getPurchaseInfo4Finish									/orders//purchase/{purchase_id} https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199720976
+/users/editPayment/												/card_braintree/profile			https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199491604
+/users/newPayment/												/card_braintree/profile			https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199491604
+/payV4/verifyPayment/(无效)
+/payV4/getOrderStatus											/orders/check					https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199655446
+/users/getGiftCardBalance										/account/giftcard				https://yamibuy.atlassian.net/wiki/spaces/Dev/pages/199491597
